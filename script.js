@@ -19,7 +19,7 @@ function adicionarTarefa() {
         inputCheck.setAttribute("type", "checkbox")
 
         p.innerHTML = valorInput
-        del.innerText = "Deletar Tarefa"
+        del.innerText = "Deletar"
 
         label.append(inputCheck)
         const div2 = document.createElement("div")
@@ -39,11 +39,10 @@ function adicionarTarefa() {
         inputCheck.addEventListener('change', function () {
             if (this.checked) {
                 p.style.textDecoration = "line-through";
-
                 div.style.backgroundColor = "green"
             } else {
                 p.style.textDecoration = "none";
-
+                div.style.backgroundColor = "rgb(65, 65, 68)"
             }
         });
 
